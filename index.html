@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mokepon2</title>
+        <script src="./mokepo2.js"></script>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+    <body>
+        <section id="intro">
+            <h1>MOKEPON </h1>
+            <p>Bienvenido a MOKEPON!! <br> En este juego tendras que seleccionar una jugador con la que luchar contra el contrincate. </p>
+            <p>Cada jugador tendrá 3 vidas, el primero en dejar al contrincante sin vidas gana.</p>
+            <h3>¿Estas preparado?</h3>
+            <button id="empezar_juego">JUGAR</button>
+        </section>
+
+        <section id="seccion_escoger_jugador">
+            <h3>Escoge tu jugador</h3>
+            <form>
+                <input type="radio" name="mascota" id="ken" value="Ken">
+                <label for="ken">Ken 🕺🏻</label>
+                <input type="radio" name="mascota" id="barbie" value="Barbie">
+                <label for="barbie">Barbie 💃🏻</label>
+                <input type="radio" name="mascota" id="alan" value="Alan">
+                <label for="alan">Alan 🤸🏻‍♂️</label>
+            </form>
+            <button id="boton_escoger_jugador">SELECCIONAR</button>
+        </section>
+
+        <section id="escoger_movimiento">
+            <p>Has escogido a: <span id="tuJugador"></span> Vidas <span id="tuVidas">3</span></p>
+            <p>Tu contrincante ha escogido a: <span id="enemigoJugador"></span> Vidas <span id="enemigoVidas">3</span></p>
+
+        <h3>Preparate para luchar!!!</h3>
+            
+            <button id="boton-fuego" class="boton_ataque">Aliento de Fenix 🐦‍🔥</button>
+            <button id="boton-agua" class="boton_ataque">Tormenta Infernal ⛈️</button>
+            <button id="boton-aire" class="boton_ataque">Tornado Devastador 🌪️</button>
+            <button id="boton-tierra"class="boton_ataque">Fauces de Arena 🌱</button>
+            
+
+        </section>
+        <section id="mensaje"></section>
+        <section id="reiniciarJuego">
+            <button id="boton_reiniciar"> REINICIAR</button>
+        </section>
+    </body>
+</html>
